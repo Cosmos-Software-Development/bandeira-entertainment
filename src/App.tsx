@@ -3,6 +3,10 @@ import { defaultTheme } from "./theme/defaultTheme";
 import { GlobalStyle } from "./styles/GlobalStyles";
 import Header from "./components/Header";
 import Manifesto from "./components/Manifesto";
+import ManifestoMaior from "./components/ManifestoMaior";
+import Modulos from "./components/Modulos";
+import Carousel from "./components/Carousel";
+import Faq from "./components/Faq";
 
 function App() {
 
@@ -12,6 +16,10 @@ function App() {
       <ContainerApp>
         <Header />
         <Manifesto />
+        <ManifestoMaior />
+        <Modulos />
+        <Carousel />
+        <Faq />
       </ContainerApp>
     </ThemeProvider>
     

@@ -53,6 +53,7 @@ const MenuContainer = styled.div`
     display: flex;
     justify-content: flex-end;
     width: 100%;
+    margin-bottom: 20px;
     img {
         width: 32px;
     }
@@ -70,7 +71,7 @@ const ContainerTitle = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 12px;
+        margin-top: 28px;
         font-family: "Montserrat", sans-serif;
         font-size: 12px;
         color: ${props => props.theme.colors['white']};
@@ -98,6 +99,7 @@ const ContainerStar = styled.div`
 `
 
 const ContainerContent = styled.div`
+    margin-top: 40px;
     h1 {
         font-family: "Montserrat", sans-serif;
         color: ${props => props.theme.colors['white']};
@@ -143,6 +145,7 @@ const ContainerButton = styled.div`
         border: none;
         font-weight: bold;
         width: 100%;
+        cursor: pointer;
         max-width: 200px;
     }
 `
