@@ -7,6 +7,7 @@ import ManifestoMaior from "./components/ManifestoMaior";
 import Modulos from "./components/Modulos";
 import Carousel from "./components/Carousel";
 import Faq from "./components/Faq";
+import Contact from "./components/Contact";
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
         <Modulos />
         <Carousel />
         <Faq />
+        <Contact />
       </ContainerApp>
     </ThemeProvider>
     

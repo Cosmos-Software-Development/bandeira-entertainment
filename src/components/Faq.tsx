@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import seta from '../assets/seta.png'
-import Accordion from "./Accordion"
+import Accordion from "./Common/Accordion"
 
 export default function Faq(){
     return(
@@ -19,12 +19,12 @@ export default function Faq(){
 }
 
 const FaqContainer = styled.div`
-    min-height: 720px;
+    min-height: 520px;
     box-sizing: border-box;
     padding-top: 62px;
     padding-left: 12px;
     padding-right: 12px;
-    padding-bottom: 55px;
+    padding-bottom: 32px;
     background-color: ${props => props.theme.colors['gray-950']};
     display: flex;
     flex-direction: column;
