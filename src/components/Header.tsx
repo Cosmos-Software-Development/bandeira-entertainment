@@ -20,7 +20,7 @@ export default function Header() {
                 <img src={star} />
             </ContainerStar>
             <ContainerContent>
-                <h1>O manifesto dos <span>sonhadores .</span></h1>
+                <h1>O m<i>anifesto</i> dos <span>sonhadores .</span></h1>
                 <p>Diamond City Bank, we are happy serve to make life easier for you. Enjoy reliable, safe, and secure banking with us. Be able to chase and achieve your dreams and </p>
             </ContainerContent>
             <ContainerButton>
@@ -68,6 +68,9 @@ const BarraInferior = styled.div`
 
 const ContainerTitle = styled.div`
     h1 {
+        i {
+            font-style: italic;
+        }
         display: flex;
         justify-content: center;
         align-items: center;
@@ -101,6 +104,9 @@ const ContainerStar = styled.div`
 const ContainerContent = styled.div`
     margin-top: 40px;
     h1 {
+        i {
+            font-style: italic;
+        }
         font-family: "Montserrat", sans-serif;
         color: ${props => props.theme.colors['white']};
         text-align: center;

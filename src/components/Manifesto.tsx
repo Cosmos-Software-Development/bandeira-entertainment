@@ -9,7 +9,7 @@ export default function Manifesto() {
                 <img src={transition1} />
             </ContainerTransition>
             <ContainerTitle>
-                <h1>O manifesto dos <span>sonhadores</span><span> .</span></h1>
+                <h1>O m<i>anifesto</i> dos <span>sonhadores</span><span> .</span></h1>
             </ContainerTitle>
             <ContainerImage>
                 <img src={rectangle} />
@@ -49,6 +49,9 @@ const ContainerTitle = styled.div`
     justify-content: center;
     margin-bottom: 42px;
     h1 {
+        i {
+            font-style: italic;
+        }
         font-size: 26px;
         font-weight: bold;
         width: 100%;
@@ -62,7 +65,7 @@ const ContainerTitle = styled.div`
             letter-spacing: -5%;
         }
         span:last-child {
-            color: ${props => props.theme.colors['gray-200']}
+            color: ${props => props.theme.colors['gray-400']}
         }
     }
 `

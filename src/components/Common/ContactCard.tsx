@@ -32,8 +32,7 @@ const ContainerContactCard = styled.div`
     align-items: center;
     gap: 18px;
     img {
-        width: 82px;
-        margin-bottom: 4px;
+        width: 62px;
     }
     h1 {
         color: ${props => props.theme.colors['white']};
