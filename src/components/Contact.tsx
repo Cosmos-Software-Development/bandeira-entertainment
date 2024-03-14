@@ -85,12 +85,12 @@ const ContainerCardContact = styled.div`
    display: flex;
    flex-direction: column;
    align-items: center;
-   margin-top: 20px;
+   margin-top: 42px;
    gap: 28px;
 `
 
 const ContainerList = styled.div`
-    margin-top: 32px;
+    margin-top: 52px;
     padding-left: 32px;
     ul {
         display: flex;
