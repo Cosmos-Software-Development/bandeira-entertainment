@@ -60,7 +60,7 @@ const ContainerAccordion = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 42px;
+    gap: 17px;
     max-width: 580px;
     min-width: 310px;
     padding: 12px;

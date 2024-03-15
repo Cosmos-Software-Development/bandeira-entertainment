@@ -105,6 +105,7 @@ const ContainerText = styled.div`
         letter-spacing: -3%;
         font-weight: 500;
         padding: 12px;
+        line-height: 22px;
     }
 `
 const ContainerImage = styled.div`

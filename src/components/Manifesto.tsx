@@ -9,7 +9,7 @@ export default function Manifesto() {
                 <img src={transition1} />
             </ContainerTransition>
             <ContainerTitle>
-                <h1>O m<i>anifesto</i> dos <span>sonhadores</span><span> .</span></h1>
+                <h1>O <i>manifesto</i> dos <span>sonhadores</span><span> .</span></h1>
             </ContainerTitle>
             <ContainerImage>
                 <img src={rectangle} />
@@ -25,12 +25,12 @@ export default function Manifesto() {
 }
 
 const ContainerManifesto = styled.div`
-    min-height: 720px;
+    min-height: 620px;
     box-sizing: border-box;
     padding-top: 20px;
     padding-left: 25px;
     padding-right: 25px;
-    padding-bottom: 55px;
+    padding-bottom: 25px;
     background-color: ${props => props.theme.colors['gray-100']};
     position: relative;
 `
@@ -65,7 +65,8 @@ const ContainerTitle = styled.div`
             letter-spacing: -5%;
         }
         span:last-child {
-            color: ${props => props.theme.colors['gray-400']}
+            color: ${props => props.theme.colors['gray-200']};
+            font-family: 'montserrat', sans-serif;
         }
     }
 `

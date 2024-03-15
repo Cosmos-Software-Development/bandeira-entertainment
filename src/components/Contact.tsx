@@ -6,7 +6,7 @@ import ContactCard from "./Common/ContactCard"
 const contactData = [
     {
         image: whatsappIcon,
-        title: 'Atendimento pelo E-mail',
+        title: 'Atendimento pelo Whatsapp',
         subtitle: 'Dúvidas sobre sua inscrição',
         contactList: ['(84) 9 9827 8054']
     },
@@ -67,16 +67,16 @@ const ContainerTitle = styled.div`
         color: transparent;
         font-weight: bold;
         width: fit-content;
-        font-size: 28px;
+        font-size: 22px;
         background-clip: text;
-        max-width: 320px;
+        max-width: 240px;
         width: 100%;
     }
     p {
         font-family: 'montserrat', sans-serif;
         color: ${props => props.theme.colors['white']};
-        font-size: 18px;
-        max-width: 320px;
+        font-size: 14px;
+        max-width: 240px;
         width: 100%;
     }
 `
@@ -86,7 +86,8 @@ const ContainerCardContact = styled.div`
    flex-direction: column;
    align-items: center;
    margin-top: 42px;
-   gap: 28px;
+   gap: 42px;
+   margin-bottom: 20px;
 `
 
 const ContainerList = styled.div`

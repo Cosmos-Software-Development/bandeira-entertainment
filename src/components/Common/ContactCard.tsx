@@ -22,25 +22,25 @@ export default function ContactCard({ image, title, subtitle, contactList }: Con
 
 const ContainerContactCard = styled.div`
     width: 280px;
-    height: 240px;
-    border-radius: 12px;
+    height: 220px;
+    border-radius: 24px;
     background: ${props => props.theme.colors['gradient-3']};
     padding: 24px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 18px;
+    gap: 16px;
     img {
-        width: 62px;
+        width: 52px;
     }
     h1 {
         color: ${props => props.theme.colors['white']};
         font-family: 'montserrat', sans-serif;
         font-weight: bold;
-        font-size: 26px;
+        font-size: 20px;
         text-align: center;
-        line-height: 32px;
+        line-height: 28px;
     }
     p {
         word-break: break-word;

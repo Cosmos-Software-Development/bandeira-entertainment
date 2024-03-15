@@ -20,7 +20,7 @@ export default function Header() {
                 <img src={star} />
             </ContainerStar>
             <ContainerContent>
-                <h1>O m<i>anifesto</i> dos <span>sonhadores .</span></h1>
+                <h1>O <i>manifesto</i> dos <span>sonhadores </span>.</h1>
                 <p>Diamond City Bank, we are happy serve to make life easier for you. Enjoy reliable, safe, and secure banking with us. Be able to chase and achieve your dreams and </p>
             </ContainerContent>
             <ContainerButton>

@@ -31,8 +31,9 @@ export default function Accordion({image, title, body}: AccordionProps){
 }
 
 const AccordionContainer = styled.div`
- cursor: pointer;
- .open {
+    width: 100%;
+    cursor: pointer;
+    .open {
         height: auto;
     }
 
@@ -57,6 +58,7 @@ const AccordionBody = styled.div`
     p {
         color: ${props => props.theme.colors['white']};
         font-family: 'montserrat', sans-serif;
+        line-height: 22px;
     }
 `
 

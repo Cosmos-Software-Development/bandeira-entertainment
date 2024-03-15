@@ -8,7 +8,7 @@ export default function Modulos(){
                 <img src={transitionImg} />
             </ContainerTransition>
             <ContainerTitle>
-            <h1>Dez  módulos <span>imersivos</span><span> .</span></h1>
+            <h1>Dez  <i>módulos</i> <span>imersivos</span><strong> .</strong></h1>
             </ContainerTitle>
             <p><strong>Em 2 meses</strong> focados em construir uma marca forte para os seu <strong>produto de entretenimento.</strong></p>
         </ContainerModulos>
@@ -60,18 +60,18 @@ const ContainerTitle = styled.div`
         width: 100%;
         color: ${props => props.theme.colors['gray-100']};
         font-family: 'montserrat', sans-serif;
-        span:first-child {
-            color: ${props => props.theme.colors['gray-100']};
-            background-clip: text;
+        i {
+            font-style: italic;
         }
         span {
+            color: ${props => props.theme.colors['gray-100']};
+            background-clip: text;
             max-width: fit-content;
             font-family: 'Druk Wide Bold', sans-serif;
-            color: ${props => props.theme.colors['gray-400']};
             letter-spacing: -5%;
         }
-        span:last-child {
-            color: ${props => props.theme.colors['gray-200']}
+        strong {
+            color: ${props => props.theme.colors['gray-200']};
         }
     }
 `
