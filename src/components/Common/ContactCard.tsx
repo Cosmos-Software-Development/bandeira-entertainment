@@ -30,7 +30,7 @@ const ContainerContactCard = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 16px;
+    gap: 14px;
     img {
         width: 52px;
     }
@@ -38,16 +38,19 @@ const ContainerContactCard = styled.div`
         color: ${props => props.theme.colors['white']};
         font-family: 'montserrat', sans-serif;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 22px;
         text-align: center;
-        line-height: 28px;
+        line-height: 26px;
+        padding-left: 24px;
+        padding-right: 24px;
     }
     p {
         word-break: break-word;
         color: ${props => props.theme.colors['white']};
         font-family: 'montserrat', sans-serif;
         max-width: 202px;
-        font-weight: 200;
+        font-weight: 400;
+        font-size: 14px;
         text-align: center;
     }
 `

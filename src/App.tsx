@@ -8,6 +8,9 @@ import Modulos from "./components/Modulos";
 import Carousel from "./components/Carousel";
 import Faq from "./components/Faq";
 import Contact from "./components/Contact";
+import Bonus from "./components/Bonus";
+import Price from "./components/Price";
+import Footer from "./components/Footer";
 
 function App() {
 
@@ -20,8 +23,11 @@ function App() {
         <ManifestoMaior />
         <Modulos />
         <Carousel />
+        <Bonus />
+        <Price />
         <Faq />
         <Contact />
+        <Footer />
       </ContainerApp>
     </ThemeProvider>
     

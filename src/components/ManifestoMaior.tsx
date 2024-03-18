@@ -89,7 +89,8 @@ const ContainerTitle = styled.div`
             letter-spacing: -5%;
         }
         span:last-child {
-            color: ${props => props.theme.colors['gray-200']}
+            color: ${props => props.theme.colors['gray-200']};
+            font-family: 'montserrat', sans-serif;
         }
     }
 `

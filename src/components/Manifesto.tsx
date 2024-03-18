@@ -89,6 +89,7 @@ const ContainerText = styled.div`
         color: ${props => props.theme.colors['gray-900']};
         font-family: 'montserrat', sans-serif;
         font-size: 14px;
+        line-height: 20px;
         font-weight: 500;
         padding: 12px;
     }

@@ -22,7 +22,7 @@ export default function Contact(){
     return(
         <ContactContainer>
             <ContainerTitle>
-                <h1>Ainda Com dúvidas?</h1>
+                <h1>Ainda com dúvidas?</h1>
                 <p>Fale com nosso time</p>
             </ContainerTitle>
             <ContainerCardContact>
