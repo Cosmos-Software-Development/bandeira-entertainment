@@ -26,10 +26,10 @@ export default function Price(){
 const PriceContainer = styled.div`
     min-height: 520px;
     box-sizing: border-box;
-    padding-top: 54px;
-    padding-left:   25px;
-    padding-right:  20px;
-    padding-bottom: 20px;
+    padding-top: 84px;
+    padding-left: 25px;
+    padding-right: 20px;
+    padding-bottom: 42px;
     background-color: ${props => props.theme.colors['gray-950']};
     position: relative;
 `
@@ -57,7 +57,7 @@ const ContainerTitle = styled.div`
 
 const ContainerList = styled.div`
     margin-top: 52px;
-    margin-bottom: 24px;
+    margin-bottom: 52px;
     display: flex;
     flex-direction: column;
     gap: 7px;
