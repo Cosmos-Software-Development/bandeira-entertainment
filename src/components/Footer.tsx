@@ -16,12 +16,12 @@ export default function Footer(){
                 </ContainerIcons>
             </ContainerSocial>
             <ContainerLinks>
-                <a>O PROGRAMA</a>
-                <a>OS CONSULTORES</a>
-                <a>MÓDULOS DE IMERSÃO</a>
-                <a>INVESTIMENTO</a>
-                <a>FAQ</a>
-                <a>FALE CONOSCO</a>
+            <a href="#programa" >O PROGRAMA</a>
+                <a href="#consultores" >OS CONSULTORES</a>
+                <a href="#modulos"  >MÓDULOS DE IMERSÃO</a>
+                <a href="#investimento" >INVESTIMENTO</a>
+                <a href="#faq" >FAQ</a>
+                <a href="#contato" >FALE CONOSCO</a>
             </ContainerLinks>
             <ContainerLogo>
                 <img src={logo} />
@@ -75,6 +75,7 @@ const ContainerLinks = styled.div`
     margin-top: 52px;
     a {
         font-family: "Montserrat", sans-serif;
+        text-decoration: none;
         font-size: 14px;
         font-weight: 400;
         color: ${props => props.theme.colors['white']};
