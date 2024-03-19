@@ -4,7 +4,7 @@ import rectangle from '../assets/Rectangle.jpg'
 
 export default function Manifesto() {
     return (
-        <ContainerManifesto>
+        <ContainerManifesto id="programa">
             <ContainerTransition>
                 <img src={transition1} />
             </ContainerTransition>

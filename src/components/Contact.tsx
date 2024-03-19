@@ -20,7 +20,7 @@ const contactData = [
 
 export default function Contact(){
     return(
-        <ContactContainer>
+        <ContactContainer id="contato">
             <ContainerTitle>
                 <h1>Ainda com dúvidas?</h1>
                 <p>Fale com nosso time</p>

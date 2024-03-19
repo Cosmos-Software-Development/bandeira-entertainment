@@ -4,7 +4,7 @@ import Accordion from "./Common/Accordion"
 
 export default function Faq(){
     return(
-        <FaqContainer>
+        <FaqContainer id="faq">
             <ContainerTitle>
                 <h1>FAQ</h1><span><strong>Dúvidas</strong><br/>Frequentes</span>
             </ContainerTitle>

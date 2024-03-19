@@ -1,14 +1,28 @@
 import styled from "styled-components"
 import bg from '../assets/Bg2.png'
-import menu from '../assets/menu.svg'
+import menu from '../assets/menu.png'
 import barraInferior from '../assets/barra-inferior.png'
 import star from '../assets/estrela.png'
+import Menu from "./Common/Menu"
+import { useState } from "react"
 
 export default function Header() {
+    const [open, setOpen] = useState<boolean>(false)
+
+    function closeMenu(){
+        setOpen(false)
+    }
+
+    function openMenu(){
+        setOpen(true)
+    }
+
+
     return (
         <HeaderContainer>
+            <Menu open={open} closeMenu={closeMenu}/>
             <MenuContainer>
-                <img src={menu} />
+                <img src={menu} onClick={openMenu}/>
             </MenuContainer>
             <BarraInferior>
                 <img src={barraInferior} />

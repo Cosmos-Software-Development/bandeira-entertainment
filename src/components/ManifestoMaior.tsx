@@ -5,7 +5,7 @@ import rectangle from '../assets/Rectangle.jpg'
 
 export default function ManifestoMaior(){
     return(
-        <ContainerManifestoMaior>
+        <ContainerManifestoMaior id="consultores">
             <ContainerTransition>
                 <img src={transition} />
             </ContainerTransition>
@@ -13,7 +13,7 @@ export default function ManifestoMaior(){
                 <img src={barraInferior} />
             </BarraInferior>
             <ContainerTitle>
-            <h1>O manifesto dos <span>sonhadores</span><span> .</span></h1>
+            <h1>O <i>manifesto</i> dos <strong>sonhadores</strong><span> .</span></h1>
             </ContainerTitle>
             <ContainerText>
                 <p>Diamond City Bank, we are happy serve to make life easier for you. Enjoy reliable, safe, and secure banking with us. Be able to chase and achieve your dreams and</p>
@@ -77,14 +77,17 @@ const ContainerTitle = styled.div`
         max-width: 250px;
         color: ${props => props.theme.colors['gray-100']};
         font-family: 'montserrat', sans-serif;
-        span:first-child {
+        i {
+            font-style: italic;
+        }
+        strong {
             background: ${props => props.theme.colors['gradient-1']};
             color: transparent;
+            font-family: 'Druk Wide Bold', sans-serif;
             background-clip: text;
         }
         span {
             max-width: fit-content;
-            font-family: 'Druk Wide Bold', sans-serif;
             color: ${props => props.theme.colors['gray-400']};
             letter-spacing: -5%;
         }

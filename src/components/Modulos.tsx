@@ -3,7 +3,7 @@ import transitionImg from '../assets/transicao-3.png'
 
 export default function Modulos(){
     return(
-        <ContainerModulos>
+        <ContainerModulos id="modulos">
             <ContainerTransition>
                 <img src={transitionImg} />
             </ContainerTransition>

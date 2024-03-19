@@ -5,7 +5,7 @@ import PriceCard from "./Common/PriceCard"
 
 export default function Price(){
     return(
-        <PriceContainer>
+        <PriceContainer id="investimento">
             <ContainerTransition>
                 <img src={transition1} />
             </ContainerTransition>
