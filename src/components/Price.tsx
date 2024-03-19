@@ -56,8 +56,8 @@ const ContainerTitle = styled.div`
 `
 
 const ContainerList = styled.div`
-    margin-top: 52px;
-    margin-bottom: 52px;
+    margin-top: 82px;
+    margin-bottom: 82px;
     display: flex;
     flex-direction: column;
     gap: 7px;

@@ -48,7 +48,7 @@ export default function Contact(){
 const ContactContainer = styled.div`
     min-height: 720px;
     box-sizing: border-box;
-    padding-top: 20px;
+    padding-top: 55px;
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 25px;
@@ -85,7 +85,7 @@ const ContainerCardContact = styled.div`
    display: flex;
    flex-direction: column;
    align-items: center;
-   margin-top: 42px;
+   margin-top: 72px;
    gap: 42px;
    margin-bottom: 20px;
 `

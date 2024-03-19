@@ -56,7 +56,7 @@ const ContainerTitle = styled.div`
 `
 
 const ContainerAccordion = styled.div`
-    margin-top: 42px;
+    margin-top: 82px;
     display: flex;
     flex-direction: column;
     justify-content: center;
