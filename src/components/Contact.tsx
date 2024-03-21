@@ -92,7 +92,7 @@ const ContainerCardContact = styled.div`
 `
 
 const ContainerList = styled.div`
-    margin-top: 52px;
+    margin-top: 62px;
     padding-left: 32px;
     ul {
         display: flex;
@@ -114,7 +114,7 @@ const ContainerButton = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 42px;
+        margin-top: 62px;
        button {
         padding: 12px;
         border-radius: 8px;
@@ -132,7 +132,7 @@ const ContainerButton = styled.div`
 `
 
 const Footer = styled.footer`
-    min-height: 80px;
+    min-height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;

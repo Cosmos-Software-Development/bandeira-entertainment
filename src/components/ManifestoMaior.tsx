@@ -70,11 +70,12 @@ const ContainerTitle = styled.div`
     display: flex;
     justify-content: center;
     margin-bottom: 12px;
+    letter-spacing: -5;
     h1 {
-        font-size: 26px;
+        font-size: 32px;
         font-weight: bold;
         width: 100%;
-        max-width: 250px;
+        max-width: 300px;
         color: ${props => props.theme.colors['gray-100']};
         font-family: 'montserrat', sans-serif;
         i {

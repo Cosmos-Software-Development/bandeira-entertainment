@@ -3,36 +3,55 @@ import styled from "styled-components"
 export default function PriceCard() {
     return (
         <PriceCardContainer>
-            <ContainerText>
-                <p>12 vezes de:</p>
-            </ContainerText>
-            <ContainerPriceValue>
-                <p>R$</p><p>238</p><span>,78</span>
-            </ContainerPriceValue>
-            <ContainerText>
-                <p>Ou R$ 1.900 à vista.</p>
-            </ContainerText>
+            <ContainerInfo>
+                <ContainerText>
+                    <p>12 vezes de:</p>
+                </ContainerText>
+                <ContainerPriceValue>
+                    <p>R$</p><p>238</p><span>,78</span>
+                </ContainerPriceValue>
+                <ContainerText>
+                    <p>Ou R$ 1.900 à vista.</p>
+                </ContainerText>
+            </ContainerInfo>
+            <Container>
             <ContainerObs>
                 <p><span>*</span>Consultoria semanal durante <strong>6 semanas</strong></p>
             </ContainerObs>
             <ContainerButton>
                 <button>Quero me inscrever</button>
             </ContainerButton>
+            </Container>
         </PriceCardContainer>
     )
 }
 
 const PriceCardContainer = styled.div`
     width: 280px;
-    height: 180px;
+    height: 220px;
     border-radius: 24px;
     background: ${props => props.theme.colors['gradient-3']};
-    padding: 24px;
+    padding: 12px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 16px;
+    gap: 28px;
+`
+
+const ContainerInfo = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+`
+
+const Container = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 `
 
 const ContainerButton = styled.div`

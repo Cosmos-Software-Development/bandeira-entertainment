@@ -18,7 +18,9 @@ export default function Price(){
                 <ItemList>Acesso a 4 módulos gravados</ItemList>
                 <ItemList>Templates atualizados bônus</ItemList>
             </ContainerList>
-            <PriceCard/>
+            <Container>
+                <PriceCard/>
+            </Container>
         </PriceContainer>
     )
 }
@@ -29,9 +31,15 @@ const PriceContainer = styled.div`
     padding-top: 84px;
     padding-left: 25px;
     padding-right: 20px;
-    padding-bottom: 42px;
+    padding-bottom: 25px;
     background-color: ${props => props.theme.colors['gray-950']};
     position: relative;
+`
+
+const Container = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: center;
 `
 
 const ContainerTransition = styled.div`
@@ -49,15 +57,17 @@ const ContainerTitle = styled.div`
         font-family: 'montserrat', sans-serif;
         font-size: 38px;
         text-align: center;
+        letter-spacing: -2px;
         span {
             font-weight: 600;
+            font-style: italic;
         }
     }
 `
 
 const ContainerList = styled.div`
-    margin-top: 82px;
-    margin-bottom: 82px;
+    margin-top: 56px;
+    margin-bottom: 56px;
     display: flex;
     flex-direction: column;
     gap: 7px;
