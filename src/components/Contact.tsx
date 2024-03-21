@@ -69,6 +69,7 @@ const ContainerTitle = styled.div`
         width: fit-content;
         font-size: 22px;
         background-clip: text;
+        -webkit-background-clip: text;
         max-width: 240px;
         width: 100%;
     }

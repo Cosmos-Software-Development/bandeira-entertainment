@@ -41,6 +41,7 @@ const ContainerTitle = styled.div`
         background: ${props => props.theme.colors['gradient-1']};
         color: transparent;
         background-clip: text;
+        -webkit-background-clip: text;
         font-family: 'Druk Wide Bold', sans-serif;
         font-size: 44px;
     }

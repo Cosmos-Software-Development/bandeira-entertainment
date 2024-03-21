@@ -66,6 +66,7 @@ const ContainerTitle = styled.div`
         span {
             color: ${props => props.theme.colors['gray-100']};
             background-clip: text;
+            -webkit-background-clip: text;
             max-width: fit-content;
             font-family: 'Druk Wide Bold', sans-serif;
             letter-spacing: -5%;
