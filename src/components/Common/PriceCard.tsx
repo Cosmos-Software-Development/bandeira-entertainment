@@ -5,7 +5,7 @@ export default function PriceCard() {
         <PriceCardContainer>
             <ContainerInfo>
                 <ContainerText>
-                    <p>12 vezes de:</p>
+                    <p>12 vezes de</p>
                 </ContainerText>
                 <ContainerPriceValue>
                     <p>R$</p><p>238</p><span>,78</span>
@@ -102,8 +102,9 @@ const ContainerPriceValue = styled.div`
     span {
         color: ${props => props.theme.colors['white']};
         font-weight: 700;
+        padding-top: 5px;
         letter-spacing: 2%;
-        font-size: 26px;
+        font-size: 24px;
         font-family: 'montserrat', sans-serif;
     }
 `
