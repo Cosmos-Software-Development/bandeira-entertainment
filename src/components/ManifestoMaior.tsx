@@ -71,11 +71,11 @@ const ContainerArrow = styled.div`
     width: 100%;
     justify-content: center;
     align-items: center;
+    opacity: 0.70;
     img {
         width: 30px;
         margin-left: -2px;
         transform: rotate(90deg);
-        opacity: 70%;
     }
 `
 
