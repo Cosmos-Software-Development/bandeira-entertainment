@@ -85,6 +85,7 @@ const ContainerTitle = styled.div`
             color: transparent;
             font-family: 'Druk Wide Bold', sans-serif;
             background-clip: text;
+            -webkit-background-clip: text;
         }
         span {
             max-width: fit-content;
