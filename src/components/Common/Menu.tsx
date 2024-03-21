@@ -56,9 +56,11 @@ const ContainerMenu = styled.dialog`
 
 const Container = styled.div`
     height: 100%;
+    padding-top: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 40px;
 `
 
 const ContainerLinks = styled.div`
@@ -71,7 +73,7 @@ const ContainerLinks = styled.div`
         font-family: "Montserrat", sans-serif;
         font-size: 14px;
         text-decoration: none;
-        font-weight: 400;
+        font-weight: 600;
         color: ${props => props.theme.colors['white']};
     }
 `

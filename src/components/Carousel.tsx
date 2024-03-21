@@ -12,7 +12,7 @@ export default function Carousel() {
     const clickArrowLeft = () => {
         sliderRef.current?.slickNext()
     }
-    
+
     const settings: Settings = {
         arrows: false,
         centerMode: true,
@@ -37,6 +37,9 @@ export default function Carousel() {
             <ContainerArrow >
                 <NextButton onClick={clickArrowLeft}><MdKeyboardArrowRight /></NextButton >
             </ContainerArrow>
+            <ContainerText>
+                <p>Você foi convocado a participar desse movimento de disrupção a transformá-lo em um sonhador empreendedor de marcas de entretenimento.</p>
+            </ContainerText>
         </ContainerCarousel>
     )
 }
@@ -89,4 +92,17 @@ const ContainerArrow = styled.div`
 `
 const ContainerSlider = styled.div`
 
+`
+
+const ContainerText = styled.div`
+    margin-top: 42px;
+    p {
+        text-align: center;
+        color: ${props => props.theme.colors['white']};
+        font-family: 'montserrat', sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+        padding: 24px;
+    }
 `
