@@ -2,6 +2,7 @@ import styled from "styled-components"
 import transition1 from '../assets/transicao-1.png'
 import ItemList from "./Common/ItemList"
 import PriceCard from "./Common/PriceCard"
+import arrowWhite from '../assets/arrow-down-white.png'
 
 export default function Price(){
     return(
@@ -9,6 +10,9 @@ export default function Price(){
             <ContainerTransition>
                 <img src={transition1} />
             </ContainerTransition>
+            <ContainerArrow>
+                <a href="#faq"><img src={arrowWhite} /></a>
+            </ContainerArrow>
             <ContainerTitle>
             <h1>Quanto <span>investir.</span></h1>
             </ContainerTitle>
@@ -34,6 +38,23 @@ const PriceContainer = styled.div`
     padding-bottom: 25px;
     background-color: ${props => props.theme.colors['gray-950']};
     position: relative;
+`
+
+const ContainerArrow = styled.div`
+    position: absolute;
+    top: 18px;
+    left: 0;
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 30px;
+        margin-left: -2px;
+        transform: rotate(90deg);
+        opacity: 70%;
+    }
 `
 
 const Container = styled.div`

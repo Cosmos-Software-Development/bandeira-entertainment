@@ -1,13 +1,17 @@
 import styled from "styled-components"
 import transition1 from '../assets/transicao-1.png'
 import rectangle from '../assets/Rectangle.jpg'
+import arrowBlack from '../assets/arrow-down-black.png'
 
 export default function Manifesto() {
     return (
         <ContainerManifesto id="programa">
             <ContainerTransition>
-                <img src={transition1} />
+               <img src={transition1} />
             </ContainerTransition>
+            <ContainerArrow>
+                <a href="#consultores"><img src={arrowBlack} /></a>
+            </ContainerArrow>
             <ContainerTitle>
                 <h1>O <i>manifesto</i> dos <span>sonhadores</span><span> .</span></h1>
             </ContainerTitle>
@@ -40,6 +44,23 @@ const ContainerTransition = styled.div`
     left: 0;
     img {
         width: 100vw;
+    }
+`
+
+const ContainerArrow = styled.div`
+    position: absolute;
+    top: 18px;
+    left: 0;
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 30px;
+        margin-left: -2px;
+        transform: rotate(90deg);
+        opacity: 70%;
     }
 `
 

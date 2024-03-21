@@ -4,6 +4,7 @@ import foldImage from '../assets/fold-image-2.png'
 import Slider, { Settings } from "react-slick"
 import { useRef } from "react"
 import { MdKeyboardArrowRight} from 'react-icons/md';
+import arrowBlack from '../assets/arrow-down-black.png'
 
 export default function Bonus() {
     const sliderRef = useRef<Slider>(null)
@@ -23,6 +24,9 @@ export default function Bonus() {
             <ContainerTransition>
                 <img src={transition1} />
             </ContainerTransition>
+            <ContainerArrowDown>
+                <a href="#investimento"><img src={arrowBlack} /></a>
+            </ContainerArrowDown>
             <ContainerTitle>
                 <h1>materiais <span>bônus</span> <strong>.</strong></h1>
             </ContainerTitle>
@@ -52,7 +56,7 @@ export default function Bonus() {
 const ContainerBonus = styled.div`
     min-height: 520px;
     box-sizing: border-box;
-    padding-top: 54px;
+    padding-top: 72px;
     padding-left: 0px;
     padding-right: 0px;
     padding-bottom: 44px;
@@ -90,6 +94,23 @@ const ContainerArrow = styled.div`
      width: 30px;
      filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.4));
     }
+`
+
+const ContainerArrowDown = styled.div`
+    position: absolute;
+    top: 18px;
+    left: 0;
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 30px;
+        margin-left: -2px;
+        transform: rotate(90deg);
+        opacity: 70%;
+    }    
 `
 
 const ContainerText = styled.div`

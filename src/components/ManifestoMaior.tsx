@@ -2,6 +2,7 @@ import styled from "styled-components"
 import transition from '../assets/transicao-2.png'
 import barraInferior from '../assets/barra-inferior.png'
 import rectangle from '../assets/Rectangle.jpg'
+import arrowBlack from '../assets/arrow-down-black.png'
 
 export default function ManifestoMaior(){
     return(
@@ -9,6 +10,9 @@ export default function ManifestoMaior(){
             <ContainerTransition>
                 <img src={transition} />
             </ContainerTransition>
+            <ContainerArrow>
+                <a href="#modulos"><img src={arrowBlack} /></a>
+            </ContainerArrow>
             <BarraInferior>
                 <img src={barraInferior} />
             </BarraInferior>
@@ -55,6 +59,23 @@ const ContainerTransition = styled.div`
     left: 0;
     img {
         width: 100vw;
+    }
+`
+
+const ContainerArrow = styled.div`
+    position: absolute;
+    top: 18px;
+    left: 0;
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 30px;
+        margin-left: -2px;
+        transform: rotate(90deg);
+        opacity: 70%;
     }
 `
 
