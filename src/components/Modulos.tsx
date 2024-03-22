@@ -26,7 +26,7 @@ const ContainerTransition = styled.div`
     @media (min-width: 1024px){
         display: none;
     }
-`
+`   
 
 const ContainerModulos = styled.div`
     box-sizing: border-box;
