@@ -7,6 +7,7 @@ import logo from '../assets/bandeira-logo.png'
 export default function Footer(){
     return(
         <ContainerFooter>
+            <Container>
             <ContainerSocial>
                 <p>Acompanhe em</p>
                 <ContainerIcons>
@@ -26,6 +27,7 @@ export default function Footer(){
             <ContainerLogo>
                 <img src={logo} />
             </ContainerLogo>
+            </Container>
             <ContainerCopy>
                 <p>Copyright © 2024. Bandeira Entretenimento</p>
                 <p>Todos os direitos reservados. CNPJ: 30.798.660/0001-20</p>
@@ -40,6 +42,17 @@ const ContainerFooter =styled.div`
     padding-right: 20px;
     padding-bottom: 32px;
     background: ${props => props.theme.colors['gradient-1']};
+`
+
+const Container = styled.div`
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 1024px){
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+    }
 `
 
 const ContainerSocial = styled.div`

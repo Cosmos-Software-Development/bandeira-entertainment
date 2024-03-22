@@ -45,6 +45,10 @@ const ContainerTransition = styled.div`
     img {
         width: 100vw;
     }
+
+    @media (min-width: 1024px){
+        display: none;
+    }
 `
 
 const ContainerArrow = styled.div`
@@ -61,6 +65,10 @@ const ContainerArrow = styled.div`
         width: 30px;
         margin-left: -2px;
         transform: rotate(90deg);
+    }
+
+    @media (min-width: 1024px){
+        display: none;
     }
 `
 
@@ -88,6 +96,13 @@ const ContainerTitle = styled.div`
         span:last-child {
             color: ${props => props.theme.colors['gray-200']};
             font-family: 'montserrat', sans-serif;
+        }
+    }
+
+    @media (min-width: 1024px){
+        h1 {
+            font-size: 34px;
+            max-width: 320px;
         }
     }
 `

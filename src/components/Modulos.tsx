@@ -22,6 +22,10 @@ const ContainerTransition = styled.div`
     img {
         width: 100vw;
     }
+
+    @media (min-width: 1024px){
+        display: none;
+    }
 `
 
 const ContainerModulos = styled.div`

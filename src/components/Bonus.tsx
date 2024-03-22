@@ -71,10 +71,18 @@ const ContainerTransition = styled.div`
     img {
         width: 100vw;
     }
+    @media (min-width: 1024px){
+        display: none;
+    }
+
 `
 
 const ContainerSlider = styled.div`
     font-family: 'montserrat', sans-serif;
+    @media (min-width: 1024px){
+        margin: 0 auto;
+        max-width: 320px;
+    }
 `
 
 const ContainerThumb = styled.div`
@@ -94,6 +102,9 @@ const ContainerArrow = styled.div`
      width: 30px;
      filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.4));
     }
+    @media (min-width: 1024px){
+        right: 40%;
+    }
 `
 
 const ContainerArrowDown = styled.div`
@@ -110,6 +121,9 @@ const ContainerArrowDown = styled.div`
         width: 30px;
         margin-left: -2px;
         transform: rotate(90deg);
+    }
+    @media (min-width: 1024px){
+        display: none;
     }    
 `
 
@@ -165,5 +179,10 @@ const ContainerTitle = styled.div`
             font-weight: 700;
 
         }
+    }
+
+    @media (min-width: 1024px){
+        display: flex;
+        justify-content: center;
     }
 `

@@ -9,20 +9,20 @@ import { useState } from "react"
 export default function Header() {
     const [open, setOpen] = useState<boolean>(false)
 
-    function closeMenu(){
+    function closeMenu() {
         setOpen(false)
     }
 
-    function openMenu(){
+    function openMenu() {
         setOpen(true)
     }
 
 
     return (
         <HeaderContainer>
-            <Menu open={open} closeMenu={closeMenu}/>
+            <Menu open={open} closeMenu={closeMenu} />
             <MenuContainer>
-                <img src={menu} onClick={openMenu}/>
+                <img src={menu} onClick={openMenu} />
             </MenuContainer>
             <BarraInferior>
                 <img src={barraInferior} />
@@ -60,6 +60,7 @@ const HeaderContainer = styled.div`
 
     @media(min-width: 1024px){
         background-position: center;
+        background-image: none;
     }
 `
 
@@ -93,10 +94,10 @@ const ContainerTitle = styled.div`
         font-size: 12px;
         color: ${props => props.theme.colors['white']};
         span:first-child {
-            font-family: 'Druk Wide Bold', sans-serif;
+            font-family: 'Montserrat', sans-serif;
             color: ${props => props.theme.colors['white']};
-            font-weight: 400;
-            font-size: 22px;
+            font-weight: 700;
+            font-size: 28px;
             margin-left: 8px;
         }
         span {
@@ -104,6 +105,19 @@ const ContainerTitle = styled.div`
             letter-spacing: -3%;
             color: ${props => props.theme.colors['white']};
             font-size: 26px;
+        }
+        
+    }
+
+    @media (min-width: 1024px){
+        h1 {
+            font-size: 18px;
+            span:first-child {
+                font-size: 36px;
+            }
+            span {
+                font-size: 38px;
+            }
         }
     }
 `
@@ -140,6 +154,19 @@ const ContainerContent = styled.div`
         font-family: "Montserrat", sans-serif;
         font-weight: 500;
         font-size: 12px;
+    }
+
+    @media (min-width: 1024px){
+        h1 {
+            font-size: 24px;
+            span {
+                font-size: 32px;
+            }
+        }
+
+        p {
+            font-size: 16px;
+        }
     }
 `
 

@@ -89,6 +89,11 @@ const ContainerCardContact = styled.div`
    margin-top: 72px;
    gap: 42px;
    margin-bottom: 20px;
+
+   @media (min-width: 1024px){
+        flex-direction: row;
+        justify-content: center;
+   }
 `
 
 const ContainerList = styled.div`
@@ -107,6 +112,10 @@ const ContainerList = styled.div`
                 font-weight: bold;
             }
         }
+    }
+    @media (min-width: 1024px){
+        display: flex;
+        justify-content: center;
     }
 `
 

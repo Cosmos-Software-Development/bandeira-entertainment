@@ -89,9 +89,16 @@ const ContainerArrow = styled.div`
      width: 30px;
      filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.4));
     }
+
+    @media (min-width: 1024px){
+        right: 40%;
+    }
 `
 const ContainerSlider = styled.div`
-
+    @media (min-width: 1024px){
+        margin: 0 auto;
+        max-width: 320px;
+    }
 `
 
 const ContainerText = styled.div`

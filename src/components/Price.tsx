@@ -55,6 +55,9 @@ const ContainerArrow = styled.div`
         margin-left: -2px;
         transform: rotate(90deg);
     }
+    @media (min-width: 1024px){
+        display: none;
+    }
 `
 
 const Container = styled.div`
@@ -69,6 +72,9 @@ const ContainerTransition = styled.div`
     left: 0;
     img {
         width: 100vw;
+    }
+    @media (min-width: 1024px){
+        display: none;
     }
 `
 
@@ -90,6 +96,14 @@ const ContainerList = styled.div`
     margin-top: 56px;
     margin-bottom: 56px;
     display: flex;
+    width: fit-content;
     flex-direction: column;
     gap: 7px;
+
+    @media (min-width: 1024px){
+        margin: 0 auto;
+        width: fit-content;
+        margin-top: 56px;
+        margin-bottom: 56px;
+    }
 `

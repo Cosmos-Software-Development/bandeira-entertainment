@@ -35,7 +35,7 @@ export default function ManifestoMaior(){
             <ContainerButton>
                 <button>Quero fazer parte</button>
             </ContainerButton>
-            <BarraInferior>
+            <BarraInferior >
                 <img src={barraInferior} />
             </BarraInferior>
         </ContainerManifestoMaior>
@@ -60,6 +60,10 @@ const ContainerTransition = styled.div`
     img {
         width: 100vw;
     }
+
+    @media (min-width: 1024px){
+        display: none;
+    }
 `
 
 const ContainerArrow = styled.div`
@@ -76,6 +80,10 @@ const ContainerArrow = styled.div`
         width: 30px;
         margin-left: -2px;
         transform: rotate(90deg);
+    }
+
+    @media (min-width: 1024px){
+        display: none;
     }
 `
 
