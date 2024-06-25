@@ -2,7 +2,7 @@ import styled, { ThemeProvider } from "styled-components";
 import { defaultTheme } from "./theme/defaultTheme";
 import { GlobalStyle } from "./styles/GlobalStyles";
 import Header from "./components/Header";
-import Manifesto from "./components/Manifesto";
+import Brands from "./components/Brands";
 import ManifestoMaior from "./components/ManifestoMaior";
 import Modulos from "./components/Modulos";
 import Carousel from "./components/Carousel";
@@ -19,7 +19,7 @@ function App() {
       <GlobalStyle />
       <ContainerApp>
         <Header />
-        <Manifesto />
+        <Brands />
         <ManifestoMaior />
         <Modulos />
         <Carousel />
