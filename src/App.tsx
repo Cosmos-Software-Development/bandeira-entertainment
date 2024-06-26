@@ -3,7 +3,7 @@ import { defaultTheme } from "./theme/defaultTheme";
 import { GlobalStyle } from "./styles/GlobalStyles";
 import Header from "./components/Header";
 import Brands from "./components/Brands";
-import ManifestoMaior from "./components/ManifestoMaior";
+import Method from "./components/Method";
 import Modulos from "./components/Modulos";
 import Carousel from "./components/Carousel";
 import Faq from "./components/Faq";
@@ -20,7 +20,7 @@ function App() {
       <ContainerApp>
         <Header />
         <Brands />
-        <ManifestoMaior />
+        <Method />
         <Modulos />
         <Carousel />
         <Bonus />
