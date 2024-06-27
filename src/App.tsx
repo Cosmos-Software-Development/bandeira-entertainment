@@ -4,12 +4,9 @@ import { GlobalStyle } from "./styles/GlobalStyles";
 import Header from "./components/Header";
 import Brands from "./components/Brands";
 import Method from "./components/Method";
-import Modulos from "./components/Modulos";
-import Carousel from "./components/Carousel";
 import Faq from "./components/Faq";
 import Contact from "./components/Contact";
-import Bonus from "./components/Bonus";
-import Price from "./components/Price";
+import Objective from "./components/Objective";
 import Footer from "./components/Footer";
 
 function App() {
@@ -21,10 +18,7 @@ function App() {
         <Header />
         <Brands />
         <Method />
-        <Modulos />
-        <Carousel />
-        <Bonus />
-        <Price />
+        <Objective/>
         <Faq />
         <Contact />
         <Footer />
