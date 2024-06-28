@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import whatsappIcon from '../assets/Whatsapp-icon.png'
+import whatsappIcon from '../assets/whatsapp-icon.png'
 import emailIcon from '../assets/email-icon.png'
 import ContactCard from "./Common/ContactCard"
 

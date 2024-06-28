@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import instaIcon from '../assets/instagram-icon.png'
-import whatsappIcon from '../assets/whatsapp-icon.png'
+import whatsappIcon from '../assets/whatsapp-icon-small.png'
 import linkedinIcon from '../assets/linkedin-icon.png'
 import logo from '../assets/bandeira-logo.png'
 
