@@ -7,7 +7,9 @@ import Method from "./components/Method";
 import Faq from "./components/Faq";
 import Contact from "./components/Contact";
 import Objective from "./components/Objective";
+import Investment from "./components/Investment";
 import Footer from "./components/Footer";
+
 
 function App() {
 
@@ -19,6 +21,7 @@ function App() {
         <Brands />
         <Method />
         <Objective/>
+        <Investment/>
         <Faq />
         <Contact />
         <Footer />
