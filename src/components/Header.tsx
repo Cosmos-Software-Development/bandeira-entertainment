@@ -8,7 +8,9 @@ export default function Header() {
   return (
     <HeaderContainer id="home">
       <TopBar>
-        <p>Metodologia Exclusiva para Produtores Culturais</p>
+        <p>
+          Metodologia Exclusiva para <strong>Produtores Culturais</strong>
+        </p>
       </TopBar>
       <HeaderLogoContainer>
         <BottonBar>
@@ -22,7 +24,7 @@ export default function Header() {
         </ContainerStar>
         <ContainerContent>
           <p>
-            Agende uma vaga na Sessão Estratégica conosco e descubra o
+            Agende uma vaga na Sessão Estratégica conosco e descubra o &nbsp;
             <b>
               Segredo do Plano de Marketing das Marcas de Entretenimento de Alto
               Impacto.
@@ -42,10 +44,10 @@ export default function Header() {
   );
 }
 const HeaderContainer = styled.div``;
+
 const TopBar = styled.div`
   display: flex;
   justify-content: center;
-  align-itens: center;
   width: 100%;
   height: 40px;
   background: ${(props) => props.theme.colors["gradient-1"]};
@@ -59,13 +61,17 @@ const TopBar = styled.div`
     text-align: center;
     letter-spacing: -0.01em;
     color: ${(props) => props.theme.colors["white"]};
+    strong {
+      font-weight: 600;
+      font-size: 11px;
+    }
   }
 `;
 const HeaderLogoContainer = styled.div`
   background-image: url(${bg});
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: right;
+  background-position: 80% 0;
   padding-top: 20px;
   padding-left: 25px;
   padding-right: 25px;
@@ -86,7 +92,6 @@ const BottonBar = styled.div`
 const ContainerTitle = styled.div`
   img {
     width: 100%;
-    height: 250px;
   }
   @media (min-width: 1024px) {
     img {
@@ -134,6 +139,7 @@ const ContainerButton = styled.div`
     width: 52px;
     position: absolute;
     right: 0;
+    bottom: 10px;
   }
   button {
     border-radius: 8px;
@@ -144,7 +150,7 @@ const ContainerButton = styled.div`
     border: none;
     width: 100%;
     cursor: pointer;
-    max-width: 200px;
+    max-width: 280px;
     font-style: normal;
     font-weight: 700;
     line-height: 39.01px;
