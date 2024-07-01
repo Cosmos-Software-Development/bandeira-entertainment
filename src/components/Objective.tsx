@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import objectiveThumb from "../assets/objective-thumb.png";
+import Redirect from "../utils/Redirect";
 
 export default function Objective() {
   return (
@@ -11,7 +12,6 @@ export default function Objective() {
           com um só
         </h2>
         <h1>
-          {" "}
           objetivo <span>:</span>
         </h1>
         <h2>Fazer a sua marca crescer!</h2>
@@ -39,7 +39,7 @@ export default function Objective() {
         conquistar resultados excepcionais.
       </ContainerText>
       <ContainerButton>
-        <button>Agendar Sessão Gratuita</button>
+      <button onClick={Redirect}>Agendar Sessão Gratuita</button>
       </ContainerButton>
     </ContainerObjective>
   );

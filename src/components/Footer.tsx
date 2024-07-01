@@ -11,8 +11,20 @@ export default function Footer() {
         <ContainerSocial>
           <p>Acompanhe em</p>
           <ContainerIcons>
-            <img src={instaIcon} />
-            <img src={whatsappIcon} />
+            <a
+              href="https://www.instagram.com/bandeiraentretenimento/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={instaIcon} />
+            </a>
+            <a
+              href="https://wa.me/5584998278054"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={whatsappIcon} />
+            </a>
             <img src={linkedinIcon} />
           </ContainerIcons>
         </ContainerSocial>

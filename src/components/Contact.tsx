@@ -2,6 +2,7 @@ import styled from "styled-components";
 import whatsappIcon from "../assets/whatsapp-icon.png";
 import emailIcon from "../assets/email-icon.png";
 import ContactCard from "./Common/ContactCard";
+import Redirect from "../utils/Redirect";
 
 const contactData = [
   {
@@ -37,7 +38,7 @@ export default function Contact() {
         ))}
       </ContainerCardContact>
       <ContainerButton>
-        <button>Agendar Sessão Gratuita</button>
+        <button onClick={Redirect}>Agendar Sessão Gratuita</button>
       </ContainerButton>
     </ContactContainer>
   );
