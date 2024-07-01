@@ -23,7 +23,8 @@ const MethodCard = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 300px;
+  width: 328px;
+  height: 268px;
   margin: 0 auto 50px;
   padding: 20px;
   background: ${(props) => props.theme.colors["gradient-4"]};
@@ -35,7 +36,6 @@ const MethodCard = styled.div`
   div {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
     padding: 20px;
 
     h1 {
@@ -52,7 +52,7 @@ const MethodCard = styled.div`
     }
     h2 {
       margin-left: 10px;
-      margin-top: 8px;
+      margin-top: 10px;
       background: ${(props) => props.theme.colors["gradient-5"]};
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -63,7 +63,7 @@ const MethodCard = styled.div`
   p {
     margin: 5px;
     text-align: center;
-    color: ${(props) => props.theme.colors["white"]};
+    color: ${(props) => props.theme.colors["gray-600"]};
     font-weight: 200;
     font-family: Montserrat;
     line-height: 20px;

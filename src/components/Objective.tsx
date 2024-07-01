@@ -8,9 +8,12 @@ export default function Objective() {
         <h2>
           Uma comunidade
           <br />
-          com um só{" "}
+          com um só
         </h2>
-        <h1> objetivo :</h1>
+        <h1>
+          {" "}
+          objetivo <span>:</span>
+        </h1>
         <h2>Fazer a sua marca crescer!</h2>
       </ContainerTitle>
       <ContainerImage>
@@ -20,19 +23,20 @@ export default function Objective() {
       <ContainerText>
         Nosso objetivo é impulsionar a sua marca, pequeno e médio produtor de
         entretenimento, posicionando-a no radar das grandes oportunidades da
-        produção cultural! E o começo para essa jornada é a Sessão Estratégica
+        produção cultural! E o começo para essa jornada é a
+        <b> Sessão Estratégica </b>
         personalizada conosco.
       </ContainerText>
       <ContainerText>
-        Nesta sessão, vamos compreender os desafios de marketing que você
+        Nesta sessão, vamos compreender os <b>desafios de marketing</b> que você
         enfrenta, desde a captação de recursos até a execução do produto de
         entretenimento, com o propósito de identificar novas oportunidades de
         fechamento de negócios.
       </ContainerText>
       <ContainerText>
-        Estamos comprometidos em ajudar sua marca a começar a jogar o Jogo do
-        Alto Impacto e atingir seu máximo potencial de conquistar resultados
-        excepcionais.
+        Estamos comprometidos em ajudar sua marca a começar a jogar o
+        <b> Jogo do Alto Impacto</b> e atingir seu máximo potencial de
+        conquistar resultados excepcionais.
       </ContainerText>
       <ContainerButton>
         <button>Agendar Sessão Gratuita</button>
@@ -59,22 +63,25 @@ const ContainerTitle = styled.div`
   align-itens: center;
   text-align: center;
   color: ${(props) => props.theme.colors["white"]};
+  font-family: "Montserrat", sans-serif;
   h2:first-child {
     margin-top: 80px;
   }
   h2 {
-    font-family: Montserrat;
     font-size: 24px;
     font-weight: 200;
-    letter-spacing: -0.04em;
     line-height: 28px;
   }
   h1 {
-    font-family: Druk Wide Bold;
-    font-size: 46px;
+    font-size: 38px;
     font-weight: 700;
+    line-height: 80px;
+    font-family: Druk Wide Bold;
     text-align: center;
     padding: 5px 40px;
+  }
+  span {
+    font-family: "Montserrat", sans-serif;
   }
   @media (max-width: 360px) {
     h1 {
@@ -91,41 +98,68 @@ const ContainerImage = styled.div`
   align-itens: center;
   width: 100%;
   img {
-    width: 80%;
+    width: 100%;
   }
 `;
 
 const ContainerText = styled.div`
-  display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 50px;
+  margin: 0 30px;
   margin-bottom: 20px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
-  letter-spacing: -0.03em;
+  letter-spacing: 0.03em;
+  line-height: 20px;
   color: ${(props) => props.theme.colors["white"]};
+  b {
+    font-weight: 700;
+  }
 `;
 
 const ContainerButton = styled.div`
   display: flex;
-  justify-content: center;
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 36px;
+  position: relative;
+  img {
+    width: 52px;
+    position: absolute;
+    right: 0;
+  }
   button {
-    padding: 12px;
-    margin: 50px 15px;
     border-radius: 8px;
+    background: transparent;
     font-family: "Montserrat", sans-serif;
-    background-color: transparent;
     color: ${(props) => props.theme.colors["white"]};
     letter-spacing: -5%;
-    text-align: center;
-    font-weight: bold;
+    border: none;
     width: 100%;
-    max-width: 200px;
     cursor: pointer;
+    max-width: 280px;
+    max-height: 41px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 39.01px;
     border: 1px solid ${(props) => props.theme.colors["white"]};
+  }
+  p {
+    margin-top: 5px;
+    color: ${(props) => props.theme.colors["white"]};
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 36.57px;
+    letter-spacing: -0.05em;
+    text-align: center;
+  }
+  @media (min-width: 1024px) {
+    p {
+      font-size: 15px;
+    }
   }
 `;

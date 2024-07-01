@@ -19,9 +19,12 @@ export default function Method() {
         <img src={barraInferior} />
       </BottonBar>
       <ContainerTitle>
-        <h1>O próximo passo para o sucesso do seu</h1>
+        <h1>
+          O próximo passo para
+          <br /> o sucesso do seu
+        </h1>
         <h2>
-          Projeto<span> .</span>
+          projeto<span> .</span>
         </h2>
       </ContainerTitle>
       <ContainerText>
@@ -53,7 +56,8 @@ export default function Method() {
       ></MethodCard>
       <MethodCard
         item="o4."
-        title="Métrica do Sucesso"
+        title="Métrica do
+        Sucesso"
         text="Nesta fase, definiremos quais são as
           métricas de sucesso do seu projeto para que
           os negócios possam
@@ -130,32 +134,35 @@ const ContainerTitle = styled.div`
   margin-bottom: 12px;
   letter-spacing: -5;
   text-align: center;
+  font-family: "Montserrat", sans-serif;
   h1 {
-    font-size: 26px;
+    font-size: 22px;
     font-weight: normal;
     width: 100%;
     color: ${(props) => props.theme.colors["white"]};
-    font-family: "montserrat", sans-serif;
     line-height: 25px;
   }
   h2 {
     background: ${(props) => props.theme.colors["gradient-1"]};
     color: transparent;
-    font-family: "Druk Wide Bold", sans-serif;
     background-clip: text;
     -webkit-background-clip: text;
-    font-size: 46px;
+    font-size: 38px;
+    font-family: Druk Wide Bold;
+    font-weight: 900;
     line-height: 80px;
   }
   span {
-    color: ${(props) => props.theme.colors["white"]};
+    font-family: "Montserrat", sans-serif;
+    color: ${(props) => props.theme.colors["gray-600"]};
+    font-weight: 900;
   }
 `;
 
 const ContainerText = styled.div`
   margin-bottom: 20px;
   p {
-    color: ${(props) => props.theme.colors["white"]};
+    color: ${(props) => props.theme.colors["gray-600"]};
     font-family: "montserrat", sans-serif;
     font-size: 14px;
     max-width: 350px;
@@ -173,22 +180,43 @@ const ContainerText = styled.div`
 
 const ContainerButton = styled.div`
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin-top: 42px;
-  margin-bottom: -42px;
+  flex-direction: column;
+  justify-content: center;
+  padding: 36px;
+  position: relative;
+  img {
+    width: 52px;
+    position: absolute;
+    right: 0;
+  }
   button {
-    padding: 12px;
     border-radius: 8px;
     background: ${(props) => props.theme.colors["gradient-1"]};
     font-family: "Montserrat", sans-serif;
     color: ${(props) => props.theme.colors["white"]};
     letter-spacing: -5%;
-    text-align: center;
     border: none;
-    font-weight: bold;
     width: 100%;
-    max-width: 200px;
     cursor: pointer;
+    max-width: 280px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 39.01px;
+  }
+  p {
+    margin-top: 5px;
+    color: ${(props) => props.theme.colors["white"]};
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 36.57px;
+    letter-spacing: -0.05em;
+    text-align: center;
+  }
+  @media (min-width: 1024px) {
+    p {
+      font-size: 15px;
+    }
   }
 `;

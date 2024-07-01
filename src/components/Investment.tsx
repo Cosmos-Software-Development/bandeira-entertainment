@@ -22,7 +22,9 @@ export default function Price() {
         <h1>
           O que você terá acesso <br /> na Sessão
         </h1>
-        <h2>estratégica .</h2>
+        <h2>
+          estratégica <span>.</span>
+        </h2>
       </ContainerTitle>
       <ContainerList>
         <ItemList>
@@ -120,8 +122,9 @@ const ContainerTitle = styled.div`
   align-itens: center;
   justify-content: center;
   text-align: center;
+  font-family: "Montserrat", sans-serif;
+
   h1 {
-    font-family: "Montserrat";
     font-style: normal;
     font-weight: 200;
     font-size: 22px;
@@ -132,8 +135,8 @@ const ContainerTitle = styled.div`
   }
   h2 {
     background: ${(props) => props.theme.colors["gradient-1"]};
+    font-family: Druk Wide Bold;
     color: transparent;
-    font-family: "Druk Wide Bold", sans-serif;
     background-clip: text;
     -webkit-background-clip: text;
     font-size: 36px;
@@ -142,25 +145,50 @@ const ContainerTitle = styled.div`
     margin: 0;
     line-height: 60px;
   }
+  span {
+    font-size: 36px;
+    font-family: "Montserrat", sans-serif;
+  }
 `;
 const ContainerButton = styled.div`
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin-top: 42px;
-  margin-bottom: 80px;
+  flex-direction: column;
+  justify-content: center;
+  padding: 36px;
+  position: relative;
+  img {
+    width: 52px;
+    position: absolute;
+    right: 0;
+  }
   button {
-    padding: 12px;
     border-radius: 8px;
     background: ${(props) => props.theme.colors["gradient-1"]};
     font-family: "Montserrat", sans-serif;
     color: ${(props) => props.theme.colors["white"]};
     letter-spacing: -5%;
-    text-align: center;
     border: none;
-    font-weight: bold;
     width: 100%;
-    max-width: 200px;
     cursor: pointer;
+    max-width: 280px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 39.01px;
+  }
+  p {
+    margin-top: 5px;
+    color: ${(props) => props.theme.colors["white"]};
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 36.57px;
+    letter-spacing: -0.05em;
+    text-align: center;
+  }
+  @media (min-width: 1024px) {
+    p {
+      font-size: 15px;
+    }
   }
 `;
