@@ -3,6 +3,7 @@ import transition1 from "../assets/transicao-1.png";
 import ItemList from "./Common/ItemList";
 import arrowWhite from "../assets/arrow-down-white.png";
 import barraInferior from "../assets/barra-inferior.png";
+import Redirect from "../utils/Redirect";
 
 export default function Price() {
   return (
@@ -41,7 +42,7 @@ export default function Price() {
         </ItemList>
       </ContainerList>
       <ContainerButton>
-        <button>Agendar Sessão Gratuita</button>
+        <button onClick={Redirect}>Agendar Sessão Gratuita</button>
       </ContainerButton>
       <BottonBar>
         <img src={barraInferior} />

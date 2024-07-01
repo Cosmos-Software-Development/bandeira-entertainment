@@ -3,6 +3,7 @@ import transition from "../assets/transicao-2.png";
 import barraInferior from "../assets/barra-inferior.png";
 import arrowBlack from "../assets/arrow-down-black.png";
 import MethodCard from "./Common/MethodCard";
+import Redirect from "../utils/Redirect";
 
 export default function Method() {
   return (
@@ -64,7 +65,7 @@ export default function Method() {
           ser escaláveis, lucrativos e verdadeiramente de alto impacto."
       ></MethodCard>
       <ContainerButton>
-        <button>Agendar Sessão Gratuita</button>
+      <button onClick={Redirect}>Agendar Sessão Gratuita</button>
       </ContainerButton>
       <BottonBar>
         <img src={barraInferior} />

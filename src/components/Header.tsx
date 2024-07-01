@@ -3,6 +3,7 @@ import bg from "../assets/Bg2.png";
 import barraInferior from "../assets/barra-inferior.png";
 import star from "../assets/estrela.png";
 import initialLogo from "../assets/logo-initial.png";
+import Redirect from "../utils/Redirect";
 
 export default function Header() {
   return (
@@ -32,7 +33,7 @@ export default function Header() {
           </p>
         </ContainerContent>
         <ContainerButton>
-          <button>Agendar Sessão Gratuita</button>
+          <button onClick={Redirect}>Agendar Sessão Gratuita</button>
           <img src={star} />
           <p>As vagas são limitadas</p>
         </ContainerButton>

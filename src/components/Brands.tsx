@@ -5,6 +5,7 @@ import StartSe from "../assets/Start-Se.png";
 import CoquetelMolotov from "../assets/Coquetel-Molotov.png";
 import DoceMaravilha from "../assets/Doce-Maravilha .png";
 import arrowBlack from "../assets/arrow-down-black.png";
+import Redirect from "../utils/Redirect";
 export default function Brands() {
   return (
     <ContainerBrands id="brands">
@@ -33,7 +34,7 @@ export default function Brands() {
         <img src={DoceMaravilha} />
       </ContainerImage>
       <ContainerButton>
-        <button>Agendar Sessão Gratuita</button>
+        <button onClick={Redirect}>Agendar Sessão Gratuita</button>
       </ContainerButton>
     </ContainerBrands>
   );
